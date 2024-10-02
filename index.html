@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Definindo o conjunto de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- Configuração da viewport para garantir que a página seja responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+
+    <!-- Título principal da página -->
+    <h1>Cadastro</h1>
+
+    <!-- Início do formulário. O atributo action="#" significa que, por enquanto, 
+         o formulário não envia os dados para nenhum servidor. method="post" indica 
+         que os dados serão enviados de forma oculta no corpo da requisição HTTP -->
+    <form action="#" method="post">
+
+        <!-- Campo de texto para o Nome Completo -->
+        <label for="nome">Nome Completo:</label>
+
+        <!-- Input para o nome do usuário, obrigatório para o preenchimento -->
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        <br><br>
+
+        <!-- Campo de texto para o E-mail -->
+        <label for="email">E-mail:</label>
+
+        <!-- Input para o e-mail do usuário, obrigatório e com validação para formato de e-mail -->
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        <br><br>
+
+        <!-- Campo para Senha -->
+        <label for="senha">Senha:</label>
+
+        <!-- Input para a senha, o campo é do tipo "password", o que oculta os caracteres digitados -->
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        <br><br>
+
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Cadastrar</button>
+    </form>
+
+</body>
+
+</html>
